@@ -1,0 +1,8 @@
+C:\Users\sai kiran\source\repos\LinkedList\bin\Debug\LinkedList.exe.config
+C:\Users\sai kiran\source\repos\LinkedList\bin\Debug\LinkedList.exe
+C:\Users\sai kiran\source\repos\LinkedList\bin\Debug\LinkedList.pdb
+C:\Users\sai kiran\source\repos\LinkedList\obj\Debug\LinkedList.csproj.AssemblyReference.cache
+C:\Users\sai kiran\source\repos\LinkedList\obj\Debug\LinkedList.csproj.SuggestedBindingRedirects.cache
+C:\Users\sai kiran\source\repos\LinkedList\obj\Debug\LinkedList.csproj.CoreCompileInputs.cache
+C:\Users\sai kiran\source\repos\LinkedList\obj\Debug\LinkedList.exe
+C:\Users\sai kiran\source\repos\LinkedList\obj\Debug\LinkedList.pdb
