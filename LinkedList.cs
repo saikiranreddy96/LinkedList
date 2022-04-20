@@ -30,9 +30,22 @@ namespace LinkedList
                 temp.next = node;
             }
 
-            //Display LinkedList Data
             Console.WriteLine("{0} inserted into the Linked List", node.data);
         }
-       
+        internal void Display()
+        {
+            //Head is Null then List is empty otherwise print All data of Linked List
+            if (this.head == null)
+                Console.WriteLine("The list is empty.");
+            else
+            {
+                Node temp = head;
+                while (temp != null)
+                {
+                    Console.WriteLine("Data : " + temp.data);
+                    temp = temp.next;
+                }
+            }
+        }
     }
 }
