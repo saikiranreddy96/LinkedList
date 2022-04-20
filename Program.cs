@@ -18,6 +18,7 @@ namespace LinkedList
             linkedList.Add(56);
             linkedList.Add(30);
             linkedList.Add(70);
+            linkedList.Display();
 
             Console.ReadLine();
         }

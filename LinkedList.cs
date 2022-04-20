@@ -19,7 +19,10 @@ namespace LinkedList
 
             //Add Data
             if (this.head == null)
+            {
                 this.head = node;
+            }
+               
             else
             {
                 Node temp = head;
