@@ -38,11 +38,13 @@ namespace LinkedList
         internal void Display()
         {
             //Head is Null then List is empty otherwise print All data of Linked List
+            Node temp = head;
             if (this.head == null)
+            {
                 Console.WriteLine("The list is empty.");
+            }
             else
             {
-                Node temp = head;
                 while (temp != null)
                 {
                     Console.WriteLine("Data : " + temp.data);
