@@ -11,18 +11,15 @@ namespace LinkedList
         //Instance
         internal Node head;
 
-        //Adding Data to LinkedList
-        internal void Add(int data)
+        //Appending Data to LinkedList
+        internal void Append(int data)
         {
             //Object of Node
             Node node = new Node(data);
 
             //Add Data
             if (this.head == null)
-            {
                 this.head = node;
-            }
-               
             else
             {
                 Node temp = head;
@@ -32,7 +29,6 @@ namespace LinkedList
                 }
                 temp.next = node;
             }
-
             Console.WriteLine("{0} inserted into the Linked List", node.data);
         }
         internal void Display()
