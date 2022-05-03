@@ -11,8 +11,8 @@ namespace LinkedList
         //Instance
         internal Node head;
 
-        //Appending Data to LinkedList
-        internal void Append(int data)
+        //Adding Data to LinkedList
+        internal void Add(int data)
         {
             //Object of Node
             Node node = new Node(data);
@@ -31,6 +31,29 @@ namespace LinkedList
             }
             Console.WriteLine("{0} inserted into the Linked List", node.data);
         }
+
+        // UC4 Adding Data In Particular Position
+        public void Insert(int position, int data)
+        {
+            Node node = new Node(data);
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Position");
+            }
+            else if (position == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                node.next = temp.next;
+                temp.next = node;
+            }
+            Console.WriteLine("{0} Node Inserted to the Linked-List.", node.data);
+        }
+
         internal void Display()
         {
             //Head is Null then List is empty otherwise print All data of Linked List

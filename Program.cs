@@ -15,9 +15,12 @@ namespace LinkedList
 
             //Calling Class LinkedList
             LinkedList linkedList = new LinkedList();
-            linkedList.Append(56);
-            linkedList.Append(30);
-            linkedList.Append(70);
+            linkedList.Add(56);
+            //linkedList.Add(30);
+            linkedList.Add(70);
+
+            linkedList.Insert(2, 30);
+
             Console.WriteLine("The elements in linked list are : ");
             linkedList.Display();
             Console.ReadLine();
