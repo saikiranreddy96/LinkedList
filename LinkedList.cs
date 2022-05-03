@@ -53,6 +53,20 @@ namespace LinkedList
             }
             Console.WriteLine("{0} Node Inserted to the Linked-List.", node.data);
         }
+        //UC5-To Delete First Element
+        public void Pop()
+        {
+            if (head == null)
+            {
+                Console.WriteLine("Linked-List is Empty.");
+            }
+            else
+            {
+                int delfirst = head.data;
+                head = head.next;
+                Console.WriteLine("\n{0} is Deleted from Linked-List.", delfirst);
+            }
+        }
 
         internal void Display()
         {
