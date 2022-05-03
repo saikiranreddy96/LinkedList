@@ -56,6 +56,7 @@ namespace LinkedList
         //UC5-To Delete First Element
         public void Pop()
         {
+            Node node = head;
             if (head == null)
             {
                 Console.WriteLine("Linked-List is Empty.");
@@ -68,7 +69,6 @@ namespace LinkedList
             }
         }
         //UC6-To Delete Last element
-
         public void PopLast()
         {
             Node temp = head;
@@ -88,7 +88,27 @@ namespace LinkedList
             temp.next = null;
             Console.WriteLine("\n{0} is Deleted from Linked-List.", delLast);
         }
+        //UC7-Search an element
+        public bool Search(int data)
+        {
+            int index = 0;
+            Node temp = head;
+            while (temp != null)
+            {
+                index++;
+                if (temp.data.Equals(data))
+                {
+                    Console.WriteLine(data + " is Found At Index = " + index);
+                    return true;
+                }
+                temp = temp.next;
+            }
+            return false;
+        }
 
+
+
+        //Display
         internal void Display()
         {
             //Head is Null then List is empty otherwise print All data of Linked List
