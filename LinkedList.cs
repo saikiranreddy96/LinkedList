@@ -64,8 +64,29 @@ namespace LinkedList
             {
                 int delfirst = head.data;
                 head = head.next;
-                Console.WriteLine("\n{0} is Deleted from Linked-List.", delfirst);
+                Console.WriteLine("\n{0} is Deleted from Linked List.", delfirst);
             }
+        }
+        //UC6-To Delete Last element
+
+        public void PopLast()
+        {
+            Node temp = head;
+            if (head == null)
+            {
+                Console.WriteLine("Linked_List is empty.");
+            }
+            else if (head.next == null)
+            {
+                head = null;
+            }
+            while (temp.next.next != null)
+            {
+                temp = temp.next;
+            }
+            int delLast = temp.next.data;
+            temp.next = null;
+            Console.WriteLine("\n{0} is Deleted from Linked-List.", delLast);
         }
 
         internal void Display()

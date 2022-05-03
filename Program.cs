@@ -20,7 +20,7 @@ namespace LinkedList
             linkedList.Add(70);
 
             //Pop means delete
-            linkedList.Pop();
+            linkedList.PopLast();
         
             Console.WriteLine("The elements in linked list are : ");
             linkedList.Display();
