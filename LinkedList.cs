@@ -35,6 +35,14 @@ namespace LinkedList
 
             Console.WriteLine("{0} inserted into the Linked List", node.data);
         }
+        //UC2
+        public void AddFirst(int NewData)
+        {
+            Node New_Node = new Node(NewData);
+            New_Node.next = this.head;
+            this.head = New_Node;
+            Console.WriteLine("{0} Node added to the Linked-List.", New_Node.data);
+        }
         internal void Display()
         {
             //Head is Null then List is empty otherwise print All data of Linked List
