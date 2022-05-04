@@ -48,6 +48,7 @@ namespace LinkedList
             else
             {
                 Node temp = head;
+
                 node.next = temp.next;
                 temp.next = node;
             }
@@ -105,8 +106,34 @@ namespace LinkedList
             }
             return false;
         }
+        //UC8-Insert Elelment At Particular Position
+        public void InsertAtPatricularPosition(int position, int data)
+        {
+            Node node = new Node(data);
+            if (position < 1)
+            {
+                Console.WriteLine("Invalid Position");
+            }
+            else if (position == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                Node temp = head;
+                while (position > 2)
+                {
+                    temp = temp.next;
+                    position--;
+                }
 
-
+                node.next = temp.next;
+                temp.next = node;
+            }
+            Console.WriteLine("\n{0} Node Inserted to the Linked-List.", node.data);
+        }
+        
 
         //Display
         internal void Display()

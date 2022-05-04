@@ -19,9 +19,9 @@ namespace LinkedList
             linkedList.Add(30);
             linkedList.Add(70);
 
-            linkedList.Search(30);
+            linkedList.InsertAtPatricularPosition(3,40);
         
-            Console.WriteLine("The elements in linked list are : ");
+            Console.WriteLine("\nThe elements in linked list are : ");
             linkedList.Display();
             Console.ReadLine();
         }
